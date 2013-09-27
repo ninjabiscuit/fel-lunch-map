@@ -1,0 +1,65 @@
+.btn {
+  with: 2.25em;
+  height: 2.25em;
+  padding: 0;
+  border: 0;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  background:none;
+  border:0;
+  cursor:pointer
+}
+
+.btn:hover, .btn:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.btn--nav {
+  font-size:0.8em;
+  display: inline-block;
+  line-height:2em
+}
+
+.btn--nav:before {
+  content: "";
+  display:inline-block;
+  float:left;
+  margin-right:1em;
+  width: 2em;
+  height:2em;
+  background-image: linear-gradient(top, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%);
+  background-image: -o-linear-gradient(top, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%);
+  background-image: -moz-linear-gradient(top, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%);
+  background-image: -webkit-linear-gradient(top, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%);
+  background-image: -ms-linear-gradient(top, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%);
+  background-image: -webkit-gradient(top, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%);
+}
+
+.btn--current-location {
+  background: url(../images/compass.svg) center center no-repeat;
+}
+
+.btn--fel-location {
+  border-left: 1px solid #999;
+  background: url(../images/fel-logo.svg) center center no-repeat;
+}
+
+.no-svg .btn--current-location {
+  background: url(../images/compass.png) center center no-repeat;
+}
+
+.no-svg .btn--fel-location {
+  background: url(../images/fel-logo.png) center center no-repeat;
+}
+
+.btn--current-location, .btn--fel-location {
+  width: 50%;
+  float: left;
+  height: 4.45em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #999;
+  background-size: 30px 30px;
+}

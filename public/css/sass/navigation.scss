@@ -1,0 +1,175 @@
+.logo {
+  float:right;
+  width:30px;
+  height:30px;
+  background:url(../images/fel-logo.svg) center center no-repeat;
+  margin-top:0.1em;
+}
+
+.no-svg .logo {
+  background:url(../images/fel-logo.png) center center no-repeat;
+}
+
+.navigation {
+  z-index: 200;
+  position: absolute;
+  overflow: hidden;
+  background:#fff;
+  float:left;
+  padding:1em;
+  top:2em;
+  right:1em;
+}
+
+.navigation .btn--close {
+  display: none;
+}
+
+.location__title {
+  display:block;
+  padding:0;
+  margin:1em 0;
+  background:none;
+  border:0;
+  cursor:pointer
+}
+
+.site-header {
+  padding:.5em 1em .6em;
+  border-bottom: 1px solid #999;
+  display:none;
+  overflow:hidden;
+}
+
+@media screen and (max-width: 45em), (max-height: 550px) {
+
+  .site-header {
+    display:block;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 0;
+    padding-top: 5.25em;
+    right:auto;
+    float:none;
+    padding:0;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .navigation:not(:target) {
+    z-index: 1;
+    height: 0;
+  }
+  .navigation:target .btn--close {
+    display: block;
+  }
+  .navigation .btn--close {
+    position: absolute;
+    top: -3.75em;
+    left: 1.875em;
+  }
+  .location__title {
+    padding-left: 1em;
+  }
+  .js .navigation {
+    height: 100%;
+    width: 80%;
+    bakgound:#fff;
+    -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+    box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+  }
+  .js .navigation .block {
+    background: transparent;
+  }
+  .js .navigation .btn--close {
+    display: block;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+  }
+  .js .navigation .btn--close:focus, .js .navigation .btn--close:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  .js .navigation {
+    left: -80%;
+  }
+  .js .inner-wrap {
+    left: 0;
+  }
+
+  .js-nav .inner-wrap {
+    left: 80%;
+  }
+
+  .js .navigation {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .js .inner-wrap {
+    left: 0 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .js-nav .inner-wrap {
+    -webkit-transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+    -moz-transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+    -ms-transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+    -o-transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+  }
+
+  .js .navigation .block {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
+    -webkit-transition-delay: ease, 0s;
+    -moz-transition: opacity 300ms 100ms ease, -moz-transform 500ms ease;
+    -o-transition: opacity 300ms 100ms ease, -o-transform 500ms ease;
+    transition: opacity 300ms 100ms ease, transform 500ms ease;
+    -webkit-transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+    -moz-transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+    -ms-transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+    -o-transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+    transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+
+  .js-nav .navigation .block {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

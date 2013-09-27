@@ -1,0 +1,27 @@
+{
+  "name": "fel-lunch-map",
+  "version": "0.0.0",
+  "authors": [
+    "Andrew Walker <andy@madebymany.co.uk>"
+  ],
+  "description": "a lunch map for the fel attendees",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "1.0.0",
+    "underscore": "1.5.2",
+    "requirejs": "2.1.8",
+    "jquery": "2.0.3",
+    "requirejs-plugins": "~1.0.2",
+    "requirejs-tpl": "*",
+    "normalize-css": "~2.1.2"
+  }
+}

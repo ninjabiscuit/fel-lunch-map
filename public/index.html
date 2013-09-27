@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FEL1D Lunch Map</title>
+    <meta name="description" content=" A map with some locations great lunch venues around Saddlers Wells">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" href="images/apple-touch-icon-57x57-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#222222">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+
+    <script type="text/javascript">
+      (function(a){var b=["js"];b.push(a.createElementNS&&a.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect?"svg":"no-svg");a.documentElement.className=b.join(" ")})(document);
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+    <script data-main="/javascripts/main" src="/javascripts/components/requirejs/require.js"></script>
+  </head>
+  <body>
+    <div class="outer-wrap">
+      <div class="inner-wrap">
+        <header class="site-header">
+          <button class="btn--nav btn" id="menu">Lunch locations</button>
+          <a href="http://frontendlondon.co.uk" class="ir logo">Front End London</a>
+        </header>
+        <div id="map-canvas" class="map-canvas"></div>
+        <div id="navigation" class="navigation" role="navigation"></div>
+      </div>
+    </div>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>
